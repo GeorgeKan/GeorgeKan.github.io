@@ -1,7 +1,7 @@
 const root = document.getElementById('root');
 
 async function fetchBooks() {
- const res = await fetch('http://it-ebooks-api.info/v1/search/react');
+ const res = await fetch('https://it-ebooks-api.info/v1/search/react');
  const data = await res.json();
  root.innerHTML = data.Books.map(book => {
      return `<p>${book.Title}</p>`
